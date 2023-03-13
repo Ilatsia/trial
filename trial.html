@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css"/>
+        <script>
+            $(document).ready(function(){
+                $('dropdown').hide();
+                $('.image-holder').click(function(){
+                    $(this).children('.dropdown').slideToggle('slow');
+                });
+            });
+        </script>
+        <style type="text/css">
+            *, html{
+                padding: 0;
+                margin: 0;
+            }
+            .image-holder
+            {
+                display: inline-block;
+                width: 20%;
+                padding: 10px;
+                vertical-align: top;
+            }
+            .thumbnail
+            {
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="image-holder">
+            <p class="title">
+                mustang v6
+            </p>
+            <img class="thumbnail" src="IMG-20230310-WA0031.jpg" alt="cake">
+            <div class="dropdown">
+                <p class="description"><strong>name</strong>Ford Mustang v6</p>
+                <p class="description"><strong>name</strong>Ford Mustang v6</p>
+                <p class="description"><strong>name</strong>Ford Mustang v6</p>
+                <p class="description"><strong>name</strong>Ford Mustang v6</p>
+            </div>
+            
+        </div>
+        <div class="image-holder">
+            <p class="title">mustang v6</p>
+            <img class="thumbnail" src="IMG-20230310-WA0031.jpg" alt="cake">
+            <div class="dropdown">
+                <p class="description"><strong>name</strong>Ford Mustang v6</p>
+                <p class="description"><strong>name</strong>Ford Mustang v6</p>
+                <p class="description"><strong>name</strong>Ford Mustang v6</p>
+                <p class="description"><strong>name</strong>Ford Mustang v6</p>
+            </div>
+        </div>
+    </body>
+</html>
